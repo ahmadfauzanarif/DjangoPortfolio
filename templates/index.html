@@ -136,7 +136,8 @@ https://templatemo.com/tm-578-first-portfolio
                     <div class="row">
 
                         <div class="col-lg-6 col-12">
-                            <img src="{% static 'images/bersama.jpeg'%}" class="about-image img-fluid" alt="">
+                            <!-- <img src="{% static 'images/bersama.jpeg'%}" class="about-image img-fluid" alt=""> -->
+                            <img src="{{ about.image.url }}" class="about-image img-fluid" alt="">
                         </div>
 
                         <div class="col-lg-6 col-12 mt-5 mt-lg-0">
@@ -148,11 +149,12 @@ https://templatemo.com/tm-578-first-portfolio
                                     <img src="{% static 'images/profil.png'%}" class="avatar-image img-fluid" alt="">
                                 </div>
 
-                                <h3 class="pt-2 mb-3">sedikit ceritaku</h3>
+                                <h3 class="pt-2 mb-3">{{ about.judul }}</h3>
 
-                                <p>Salam kenal teman-teman, aku Ahmad Fauzan Arif, sebenarnya aku kesusahan dengan posisiku bekerja, karena kadang jadi mentor, kadang jadi programmer, kadang jadi pembimbing PKL. Jadi intinya itu posisi saya hehe.</p>
+                                <p>{{about.isi}}</p>
+                                <!-- <p>Salam kenal teman-teman, aku Ahmad Fauzan Arif, sebenarnya aku kesusahan dengan posisiku bekerja, karena kadang jadi mentor, kadang jadi programmer, kadang jadi pembimbing PKL. Jadi intinya itu posisi saya hehe.</p>
 
-                                <p>Ini adalah portofolio saya yang menampilkan perjalanan karier saya dan berbagai proyek yang telah saya kerjakan. Saya percaya bahwa <strong>semangat dan disiplin</strong> adalah kunci keberhasilan, dan saya selalu berusaha memberikan yang terbaik dalam setiap proyek." </p>
+                                <p>Ini adalah portofolio saya yang menampilkan perjalanan karier saya dan berbagai proyek yang telah saya kerjakan. Saya percaya bahwa <strong>semangat dan disiplin</strong> adalah kunci keberhasilan, dan saya selalu berusaha memberikan yang terbaik dalam setiap proyek." </p> -->
                             </div>
                         </div>
 
