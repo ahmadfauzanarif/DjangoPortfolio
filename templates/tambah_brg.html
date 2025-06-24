@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block judul %}
+
+Halaman Tambah Barang
+
+{% endblock judul %}
+
+
+{% block isi %}
+
+<div class="text-center mt-3 mb-0">
+    <h1>Form Tambah Barang</h1>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div style="max-width: 500px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #f8f9fa; /* Warna  latar belakang */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                <form method="post" action="">
+                    {% csrf_token %}
+                    {{ form_brg.as_p }}
+                    <div class="text-center mt-3">
+                        <button type="submit" class="btn btn-primary">Tambah</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock isi %}
